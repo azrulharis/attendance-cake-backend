@@ -30,8 +30,36 @@ class OtRequestsController extends AppController {
 		$this->set('otRequests', $this->Paginator->paginate());
 	}
 
-	public function api_index() {
-		$this->OtRequest->recursive = 0;
+	public function api_index($status = null) {
+		if($status != null) {
+			$conditions['OtRequest.status'] = $status;
+		} 
+		$this->OtRequest->settings = array(
+			'conditions' => $conditions,
+			'recursive' => 0,
+			'limit' => 30,
+			'contain' => array(
+				'User' => array(
+					'fields' => array(
+						'User.id',
+						'User.username',
+						'User.name',
+						'User.mobile_number'
+						)
+					)
+				),
+				'ProjectManager' => array(
+					'fields' => array(
+						'User.id',
+						'User.username',
+						'User.name',
+						'User.mobile_number'
+						)
+					)
+				),
+				'Project',
+				'ProjectGroup'
+			);
 		$json = $this->Paginator->paginate();
 		$this->set(array(
             'json' => $json,

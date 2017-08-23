@@ -7,9 +7,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => true,
 		'host' => 'localhost',  
-		'login' => 'ekong_v2',
-		'password' => 'ekong_v2',
-		'database' => 'ekong_v2',  
+		'login' => '',
+		'password' => '',
+		'database' => '',  
 		'encoding' => 'utf8' 
 	); 
 }

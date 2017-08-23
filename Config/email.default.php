@@ -105,8 +105,8 @@ public $default = array(
 public $smtp = array( 
   'host' => 'ssl://smtp.gmail.com',
   'port' => 587,
-  'username' => 'mohdazrul.jmsb@gmail.com',
-  'password' => 'rahsia.123',
+  'username' => 'email@domain.com',
+  'password' => 'password',
   'mailtype' => 'html',
   'timeout' => 30,
   'wordwrap' => TRUE,
@@ -129,8 +129,8 @@ public $smtp = array(
  
 
 public $fast = array( 
-'from' => 'mohdazrul.jmsb@gmail.com',  
-'sender' => 'mohdazrul.jmsb@gmail.com',  
+'from' => '',  
+'sender' => '',  
 'to' => null, 
 'cc' => null, 
 'bcc' => null, 

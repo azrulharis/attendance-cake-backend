@@ -13,6 +13,7 @@ App::uses('AppModel', 'Model');
  */
 class OtRequest extends AppModel {
 
+	public $actsAs = array('Containable');
 /**
  * Validation rules
  *
