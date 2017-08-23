@@ -1,0 +1,100 @@
+ACL Plugin for CakePHP 2.5
+===========================
+
+/**
+ * Application level Controller
+ *
+ * This file is application-wide controller file. You can put all
+ * application-wide controller-related methods here.
+ *
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       app.Controller
+ * @since         CakePHP(tm) v 0.2.9
+ *
+ * Company : W3itexperts
+ * Author : Rahul Dev Sharma
+ * Script Name : CakeReady - Ready Admin With Authentication & ACL Management Plugin
+ * Created On : 31 December 2015
+ * Script Version : CakeReady v 0.1
+ * CakePHP Version : 2.5
+ *
+ *
+ * Website: http://www.w3itexperts.com/
+ * Contact: admin@w3itexperts.com
+ * Follow: www.twitter.com/w3itexperts
+ * Like: www.facebook.com/w3itexperts
+ */
+
+
+Installation
+-------------
+
+
+- Download the CakeReady setup and put it in project folder
+- Configure the 'admin' route (see http://book.cakephp.org/2.0/en/development/routing.html)
+- Configure the plugin according to your web application:
+	
+	1.	You can setup in app/config/bootstrap.php file according your requirement.
+	
+	2.  Configure the 'Base Url' into the constant file in app/Config folder.
+    
+    3.  Configure the Database details into the database file in app/Config folder.
+    
+    4.  Export the sql file into your database.
+    
+    5.  Now you can use CakeReady setup and extend it according to your requirement.
+
+
+
+
+About CakeReady 
+-----------------
+
+Cake Ready used for types of plugin :
+	
+    1. Configuration
+    2. ACL
+    3. Email Template
+	  
+
+ 1. Setting : This is manage by configuration plugin.You can use configuration plugin individually also.    
+ 	
+    Some kinds of setting use in this setup.
+    
+    a) Add Setting
+    b) Site Setting
+    c) Reading Setting
+    d) Writing Setting
+    e) Comment Setting
+    f) Social Setting
+    g) CakeRDX Setting 
+
+ 2. Email Template : This is manage by Email Template plugin.You can use this plugin individually also.
+ 
+ 	a) Email Template Listing
+    b) Add Email Template 
+    c) Edit Email Template
+    d) View Email Template
+    a) Filter Facility
+ 
+ 3. Access Manager : This manager is used for security purpose.Help of this plugin you can manage admin, manager, user and many more groups permission.
+ 					 
+    a) Permission :
+    	(A)	Build Missing AROs
+        (B)	User Roles
+        (C) Roles Permission
+        (D) User Permission
+        
+    b) Action :
+    	(A) Syncronize ACOs
+        (B) Clean action ACOs
+        (C) Build action ACOs
+        (D) Prune action ACOs
+        
+  4. Location :	 Location plugin give add, edit, view facility of country, state and city.
+  
+  5. Group : This is specify user role and give add, edit, view, delete option of group.
+  
+  6. User  : This is manager give add, edit, view, delete option of user.
+ 	
+    

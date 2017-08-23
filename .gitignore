@@ -1,0 +1,9 @@
+ 
+/tmp/*
+/Config/database.php
+/Config/email.php
+/vendors/*
+/webroot/files/*   
+/debug.log 
+/error.log 
+

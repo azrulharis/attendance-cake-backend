@@ -1,0 +1,1 @@
+<div style="color:#0C0"><?php echo $message; ?></div>

@@ -1,0 +1,33 @@
+Plugin Name : IWT Content Plugin
+
+
+1)Featured Image :-
+	js upload 
+	X- image editor like wordpress (Plugin Based)
+
+2) Screen Option
+	X manage from configuration array Config::write('ScreenOption', array('Page Attributes' => array('dafault' => true, 'id' => 'PageAttributesContainer' ), ''));
+
+
+3) Help
+	X Managed by Help Plugin
+
+4) Order
+	simple input box like woprdpress
+	X model box open and manage order like up, down into it's parent
+
+5) Tag 
+	Simple coma saperated 
+	X tab scripe will implement on  this
+
+6) Category 
+	All
+	X Most Used
+
+7) Template
+	X select template
+
+
+8) Add new Category Link on Category Block (Blog)
+	X Model box for adding category
+	

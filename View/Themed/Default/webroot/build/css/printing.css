@@ -1,0 +1,131 @@
+
+span.align-right {
+  float:right;
+} 
+
+table th.align-right, table td.align-right, span.align-right {
+  text-align: right!important; 
+} 
+.wrapper {  
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/ 
+    font-family: "Tahoma";
+    color: #000!important;
+    font-size: 14pt;
+  }
+@media print {
+    .page {page-break-after:always; width: 100%;}
+    body, table, p, table td {
+        font-family: "Tahoma";
+        background: #fff;
+        font-size: 14pt;
+    }
+    hr {
+      color: #000;
+    } 
+
+    b, div {
+      page-break-after: avoid;
+    }
+}
+
+table td, table th  {
+  font-size: 13pt;
+}
+body {
+    font-family: "Tahoma";
+    color: #000!important;
+    font-size: 14pt;
+}
+
+table.bordered td { 
+    border-bottom: 1px solid #000;
+    background: transparent;
+}
+table.bordered tr:nth-last-child(1) { 
+    border-bottom: 0px; 
+}
+
+table.table-bordered, table.table-bordered td, table.table-bordered th, table.table-bordered tr {
+    border: 1px solid #000!important; 
+    margin-bottom: 30px;
+
+}
+
+table.table-bordered td {
+    padding: 5px 5px;
+}
+
+@media print {
+  .page-break {
+      page-break-after:always; width: 100%;
+  }
+
+  @page {                
+    size: A4;
+    margin: 40mm 10mm;
+  }
+
+  html, body {
+    width: 1080px;
+  }
+
+  body {
+    margin: 0 auto;
+    line-height: 1em;
+    word-spacing:1px;
+    letter-spacing:0.2px;
+    font: 15pt "Tahoma";
+    background:white;
+    color: #000!important;
+    width: 100%;
+    float: none;
+  }
+
+  /* avoid page-breaks inside a listingContainer*/
+  .listingContainer{
+    page-break-inside: avoid;
+  }
+
+  h1 {
+    font: 28px "Tahoma";
+  }
+
+  h2 {
+    font: 24px "Tahoma";
+  }
+
+  h3 {
+    font: 20px "Tahoma";
+  }
+
+  /* Improve colour contrast of links */
+  a:link, a:visited {
+    color: #781351
+  }
+
+  /* URL */
+  a:link, a:visited {
+    background: transparent;
+    color:#333;
+    text-decoration:none;
+  }
+
+  a[href]:after {
+    content: "" !important;
+  }
+
+  a[href^="http://"] {
+    color:#000;
+  }
+
+  #header {
+    height:75px;
+    font-size: 24pt;
+    color:black
+  }
+}

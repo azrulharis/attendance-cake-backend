@@ -1,0 +1,125 @@
+table th.align-right, table td.align-right, span.align-right {
+  text-align: right!important;
+  float: right;
+} 
+.wrapper {  
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/ 
+  }
+
+@media print {
+  p {page-break-inside: avoid;}
+  .p-no-space p { 
+      margin: 0!important; 
+  } 
+  .wrapper {  
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/ 
+  }
+}
+@media print {
+    body, table, p, table td {
+        font: Georgia, "Times New Roman", Times, serif;
+        background: #fff;
+        font-size: 10pt;
+    }
+    hr {
+      color: #000;
+    }
+    .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+      border: 1px solid #000!important;
+    }
+}
+
+@page { size: A4;  margin: 8mm;}
+.page {page-break-after:always; width: 98%;padding: 20mm 8mm;}
+@media print {
+    table th.align-right, table td.align-right {
+  text-align: right!important;
+}
+    body, table, p, table td {
+        font-family: Arial;
+        background: #fff;
+        font-size: 11pt;
+        width: 100%;
+    }
+    hr {
+      color: #000;
+    }  
+  div span, font b {page-break-inside: avoid;}  
+      
+  table.bordered td { 
+      border-bottom: 1px solid #000;
+      background: transparent;
+  }
+  table.bordered tr:nth-last-child(1) { 
+      border-bottom: 0px; 
+  }
+
+  table.table-bordered, table.table-bordered td, table.table-bordered tr {
+      border: 1px solid #000; 
+      margin-bottom: 30px;
+  }
+
+  table.table-bordered td {
+      padding: 5px 5px;
+  }
+  .page-break {
+      page-break-after:always; width: 100%;
+  } 
+  html, body {
+    width: 98%;
+  }
+ 
+
+  /* avoid page-breaks inside a listingContainer*/
+  .listingContainer{
+    page-break-inside: avoid;
+  }
+
+  h1 {
+    font: 28px "Times New Roman", Times, serif;
+  }
+
+  h2 {
+    font: 24px "Times New Roman", Times, serif;
+  }
+
+  h3 {
+    font: 20px "Times New Roman", Times, serif;
+  }
+
+  /* Improve colour contrast of links */
+  a:link, a:visited {
+    color: #781351
+  }
+
+  /* URL */
+  a:link, a:visited {
+    background: transparent;
+    color:#333;
+    text-decoration:none;
+  }
+
+  a[href]:after {
+    content: "" !important;
+  }
+
+  a[href^="http://"] {
+    color:#000;
+  }
+
+  #header {
+    height:75px; 
+    color:white;
+    background: white;
+  }
+}

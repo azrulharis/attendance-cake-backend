@@ -1,0 +1,59 @@
+Content Plugin for CakePHP 2.0
+===========================
+
+Date: 2014-12-22
+Website: http://www.iwt.in
+License: http://www.opensource.org/licenses/mit-license.php The MIT License
+
+This CakePHP plugin is an interface to manage an Menu protected web application.
+
+Installation
+-------------
+
+- Download the plugin and put it in your 'app/Plugin' or 'plugins' folder
+- Configure the 'admin' route (see http://book.cakephp.org/2.0/en/development/routing.html)
+- Configure the plugin according to your web application:
+
+	Some settings have to be read by CakePHP when the plugin is loaded. They can be found
+	in the 'Content/Config/bootstrap.php' file.
+	
+	You have two options to use these settings, as CakePHP doesn't automatically load 
+	the bootstrap.php files in plugins:
+	
+	1.	Copy all the settings in your app/config/bootstrap.php file
+	
+	or
+	
+	2.	Load the plugin bootstrap with the plugin
+	
+	        CakePlugin::load('Content', array('bootstrap' => true));
+
+- Make sure the MenuComponent is declared in your AppController and that your User and Group/Role models are configured to act as requester  
+- Access the Menu plugin by navigating to /admin/content
+
+
+About CakePHP 2.0
+-----------------
+
+If you use CakePHP version 2.0, the plugin will work only if you do not use the E_STRICT error reporting level.
+
+You can use E_STRICT error reporting level with CakePHP 2.1 or above.
+
+Change Layout
+-----------------------------------------------------------------------------
+1. You can change layout from bootstrap Configure::write('content.use_plugin_layout',false).
+2. Replace false by true.
+
+Database Structure(table name and field)
+-----------------------------------------
+Content: (id,parent_id,user_id,type,title,slug,excerpt,content,comment,password,status,visibility,feature_image,publish_on,lft,rght,modified,created)
+
+Content Meta: (id,content_id,name,value)
+------------------------------------------------------------------------------------
+
+Uses:
+------
+1. You can manage contents from this plugin. 
+
+
+ 
